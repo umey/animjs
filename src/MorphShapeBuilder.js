@@ -53,7 +53,7 @@ var p=MorphShapeBuilder.prototype;
         while(gap>0){
             var sp = st[sTimeIndex];
             var lp = lt[lTimeIndex];
-            // timeを比較して、小さいうちは分割
+
             while(lp.time<sp.time && gap>0){
                 sms.splitAt(lp.time);
                 lTimeIndex++;
