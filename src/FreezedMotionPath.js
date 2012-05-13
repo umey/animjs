@@ -1,6 +1,6 @@
 /**
- * Freezer
- * freeze the motion path or the morph shape.
+ * FreezedMotionPath
+ * 
  */
 (function(window){
     /**
