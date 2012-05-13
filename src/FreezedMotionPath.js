@@ -4,7 +4,7 @@
  */
 (function(window){
     /**
-     * @class Freezer
+     * @class FreezedMotionPath
      * @constructor
      **/
 var FreezedMotionPath = function FreezedMotionPath(data,time,sampling){
