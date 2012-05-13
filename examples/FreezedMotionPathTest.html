@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>freezed motion path test</title>
+    <script src="http://code.createjs.com/easeljs-0.4.2.min.js"></script>
+
+    <script src="../src/QBezier.js"></script>
+    <script src="../src/Path.js"></script>
+    <script src="../src/MotionPath.js"></script>
+    <script src="../src/FreezedMotionPath.js"></script>
+    <script src="../src/Freezer.js"></script>
+
+</head>
+<body onload = "init();">
+
+<canvas id="canvas" width="400" height="320" style="background-color:#ffffff"></canvas>
+<p>
+    <div id="info"></div>
+</p>
+
+<script>
+
+    function init(){
+
+        var canvas = document.getElementById("canvas");
+        var stage = new Stage(canvas);
+
+        //create the two arrows
+        var shape1 = new Shape(new Graphics().f("#FFCC00").drawCircle(0,0,10));
+        var shape2 = new Shape(new Graphics().f("#99CC66").drawCircle(0,0,10));
+        stage.addChild(shape1, shape2);
+
+        /* create the two MotionPath,*/
+        // create by MotionPath.get
+        var mp1 = MotionPath.get({},30).moveTo(0,100).curveTo(80,0,160,160).curveTo(240,320,320,220);
+        // create by new statement
+        var mp2 = new MotionPath(30);
+        // draw circle
+        createPath(mp2, 160,160,100,8);
+
+        /* freeze the motion*/
+        //the animation time is 50, the sampling interval is 1.
+        var fp1 = new Freezer().freezeMotionPath(mp1,50,1);
+        //the animation time is 100, the sampling interval is 10, rounding x,y.
+        var fp2 = new Freezer().freezeMotionPath(mp2,100,10,true);
+
+        // draw the path to the shape
+        var path1 = mp1.drawPath(new Shape(),"#FFCC00");
+        var path2 = mp2.drawPath(new Shape(),"#99CC66");
+        // using the freezed data,so don't need the original motion path
+        mp1 = null;
+        mp2 = null;
+
+        stage.addChild(path1,path2);
+
+        //call getAt(time) and get a info of x,y,and rotation
+        var index=0;
+        var info = document.getElementById("info");
+        stage.onTick = function(){
+            var p1 = fp1.getAt(index);
+            var p2 = fp2.getAt(index);
+            index++;
+            //set x,y position by value of return object
+            shape1.x = p1.x;
+            shape1.y = p1.y;
+            shape2.x = p2.x;
+            shape2.y = p2.y;
+
+            info.innerHTML = "<p>shape1<br> x:" + p1.x + "<br> y:" + p1.y +
+                            "</p><br>shape2<br> x:" + p2.x + "<br> y:" + p2.y +"</p>";
+        };
+
+        Ticker.setFPS(24);
+        Ticker.addListener(stage);
+    }
+    //helper of draw circle
+    function createPath (mp,nX, nY, nR, nSegments) {
+        if (nSegments == undefined)nSegments = 8;
+        var nAngle = 2*Math.PI/nSegments;
+        mp.moveTo(nX+nR, nY);
+        for (var i = 1; i<=nSegments; ++i) {
+            var nTheta = i*nAngle;
+            var nAnchorX = nR*Math.cos(nTheta);
+            var nAnchorY = nR*Math.sin(nTheta);
+            var nControlX = nAnchorX+nR*Math.tan(nAngle/2)*Math.cos(nTheta-Math.PI/2);
+            var nControlY = nAnchorY+nR*Math.tan(nAngle/2)*Math.sin(nTheta-Math.PI/2);
+            mp.curveTo(nControlX+nX, nControlY+nY, nAnchorX+nX, nAnchorY+nY);
+        }
+    }
+</script>
+</body>
+</html>

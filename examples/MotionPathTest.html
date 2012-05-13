@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>motion path test</title>
+    <script src="http://code.createjs.com/easeljs-0.4.2.min.js"></script>
+
+    <script src="../src/QBezier.js"></script>
+    <script src="../src/Path.js"></script>
+    <script src="../src/MotionPath.js"></script>
+</head>
+<body onload = "init();">
+
+<canvas id="canvas" width="400" height="320" style="background-color:#ffffff"></canvas>
+<p>
+    <label>rotate style:</label>
+    <select id="rotationType" name="rotationType">
+        <option value="-1">none</option>
+        <option value="1" selected>forward</option>
+        <option value="0">like Flash (It's not working ;p)</option>
+    </select>
+</p>
+<script>
+    function init(){
+        var canvas = document.getElementById("canvas");
+        var stage = new Stage(canvas);
+
+        // create two allows
+        var shape1 = new Shape(new Graphics().f("#FFCC00").rect(-20,-10,30,20).moveTo(10,-20).lineTo(10,20).lineTo(40,0).lineTo(10,-20).f());
+        var shape2 = new Shape(new Graphics().f("#99CC66").rect(-20,-10,30,20).moveTo(10,-20).lineTo(10,20).lineTo(40,0).lineTo(10,-20));
+        stage.addChild(shape1, shape2);
+
+        // create motion path like "Tween.get" & "Graphics.beginFill()..."
+        /** MotionPath.get
+         *
+         * @ param {Object} object          Usually specify the DisplayObject
+         * @ param {Number} time            Animation total time
+         * @ param {Number} rotationType    [MotionPath.NONE | MotionPath.FORWARD | MotionPath.POI_FLASH]
+         */
+
+        var mp1 = MotionPath.get(shape1,60,MotionPath.FORWARD)
+                .moveTo(20,80).curveTo(90,-20,160,80).curveTo(230,180,300,80)
+                .lineTo(300,220).curveTo(230,320,160,220).curveTo(80,120,20,220).lineTo(20,80);
+        var mp2 = MotionPath.get(shape2,60,MotionPath.FORWARD);
+        // draw circle
+        createPath(mp2, 160,160,100,6);
+
+        // call getAt(time) & reflect x,y param
+        var time=0;
+        stage.onTick = function(){
+            mp1.getAt(time);
+            mp2.getAt(time);
+            time++;
+            // draw path data directly to canvas
+            mp1.drawPath(canvas,"#FFCC00");
+            mp2.drawPath(canvas,"#99CC66");
+        };
+
+        Ticker.setFPS(30);
+        Ticker.addListener(stage);
+
+        document.getElementById("rotationType").onchange = function(e){
+            var n = Number(e.target.value);
+            mp1.rotationStyle = mp2.rotationStyle = n;
+            if(n==MotionPath.NONE)shape1.rotation = shape2.rotation = 0;
+        };
+
+    }
+    //drawing circle helper
+    function createPath (mp,nX, nY, nR, nSegments) {
+        if (nSegments == undefined)nSegments = 8;
+        var nAngle = 2*Math.PI/nSegments;
+        mp.moveTo(nX+nR, nY);
+        for (var i = 1; i<=nSegments; ++i) {
+            var nTheta = i*nAngle;
+            var nAnchorX = (nR+0)*Math.cos(nTheta);
+            var nAnchorY = (nR+0)*Math.sin(nTheta);
+            var nControlX = nAnchorX+nR*Math.tan(nAngle/2)*Math.cos(nTheta-Math.PI/2);
+            var nControlY = nAnchorY+nR*Math.tan(nAngle/2)*Math.sin(nTheta-Math.PI/2);
+            mp.curveTo(nControlX+nX, nControlY+nY, nAnchorX+nX, nAnchorY+nY);
+        }
+    }
+
+</script>
+</body>
+</html>
