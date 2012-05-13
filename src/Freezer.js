@@ -51,7 +51,7 @@ var p = Freezer.prototype;
         return new FreezedMotionPath(data,time,sampling);
     };
     /**
-     * freeze the motion path at specified time and intervals
+     * freeze the MorphShape at specified time and intervals
      * @param {MotionPath} morphShape   the target MorphShape
      * @param {Number} time             the total time of animation
      * @param {Number} sampling         the interval of sampling
