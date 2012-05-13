@@ -27,16 +27,16 @@ create BitmapAnimation
         var canvas = document.getElementById("canvas");
         var stage = new Stage(canvas);
 
-        //　create a circle path
+        //create a circle path
         var mp1 = new MorphPath();
         var data1 = [240,160, 240,193,216,216,193,240,160,240, 126,240,103,216,80,193, 80,160, 80,127,103,103,127, 80,160, 80,193, 80,216,103,240,127,240,160];
         mp1.f("#990000").read(data1);
 
-        //　ninja
+        //ninja
         var mp2 = new MorphPath();
         mp2.f("#000000").read(getNinjaData());
 
-        // show the path
+        //show the path
         var mp1path = new Shape();
         var mp2path = new Shape();
         mp1.drawPath(mp1path);
@@ -45,7 +45,7 @@ create BitmapAnimation
 
         var button = document.getElementById("button");
         button.onclick = function(){
-            //　create MorphShape(Shape with morphing data) by MorphShapeBuilder
+            //create MorphShape(Shape with morphing data) by MorphShapeBuilder
             var motionShape1 = new MorphShapeBuilder().build(mp1,mp2,150,Ease.bounceOut);
 
             /* freeze the motion */
@@ -56,13 +56,13 @@ create BitmapAnimation
             stage.addChild(bitmapAnimation);
             bitmapAnimation.gotoAndPlay(0);
 
-            // using the freezed data,so don't need the original MotionShape etc...
+            //using the freezed data,so don't need the original MotionShape etc...
             motionShape1.dispose();
             motionShape1 = null;
             mp1 = null;
             mp2 = null;
 
-            // use created BitmapAnimation
+            //use created BitmapAnimation
             bitmapAnimation.y = 20;
             Tween.get(bitmapAnimation,{loop:true,useTicks:true}).to({x:200},40).to({x:0},40);
         };
