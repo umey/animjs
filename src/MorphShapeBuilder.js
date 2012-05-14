@@ -15,15 +15,16 @@ var p=MorphShapeBuilder.prototype;
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const MorphShapeBuilder.name
      */
     MorphShapeBuilder.name = "MorphShapeBuilder";
 
 // public method:
     /**
      * build the MorphShape from the two MorphMath
+     * @method build
      * @param {MorphPath} mp0 start path
      * @param {MorphPath} mp1 end path
      * @param {Number} time total time of animation

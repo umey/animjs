@@ -23,30 +23,30 @@ var MotionPath = function (time, rotationStyle){
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const MotionPath.name
      */
     MotionPath.name = "MotionPath";
     /**
      * Constant defining the none rotation.
-     * @property NONE
      * @type {Number}
      * @static
+     * @const MotionPath.NONE
      */
     MotionPath.NONE = -1;
     /**
      * Constant defining the Flash-like rotation. Note:"Poi" is a Japanese word meaning "similar" or "like"
-     * @property POI_FLASH
      * @type {Number}
      * @static
+     * @const MotionPath.POI_FLASH
      */
     MotionPath.POI_FLASH = 0;
     /**
      * Constant defining the rotation in the direction of travel.
-     * @property FORWARD
      * @type {Number}
      * @static
+     * @const MotionPath.FORWARD
      */
     MotionPath.FORWARD = 1;
 
@@ -82,7 +82,7 @@ var MotionPath = function (time, rotationStyle){
 // public properties:
     /**
      * type of rotation
-     * @oroperty
+     * @property rotationStyle
      * @type {Number}
      */
     p.rotationStyle = 0;

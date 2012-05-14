@@ -19,9 +19,9 @@ var p = QBezier.prototype;
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const QBezier.name
      */
     QBezier.name = "QBezier";
 
@@ -46,7 +46,7 @@ var p = QBezier.prototype;
     p.p2 = null;
 // public methods:
     /**
-     * calculate the distance between the 3-point
+     * calculate the distance between the 3-point.<br>
      * Only 3-points. hmm..
      * @method getDistance
      * @return {Number}

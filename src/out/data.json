@@ -1,0 +1,1528 @@
+{
+    "project": {},
+    "files": {
+        "FreezedMotionPath.js": {
+            "name": "FreezedMotionPath.js",
+            "modules": {},
+            "classes": {
+                "FreezedMotionPath": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "Freezer.js": {
+            "name": "Freezer.js",
+            "modules": {},
+            "classes": {
+                "Freezer": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "MorphPath.js": {
+            "name": "MorphPath.js",
+            "modules": {},
+            "classes": {
+                "MorphPath": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "MorphShape.js": {
+            "name": "MorphShape.js",
+            "modules": {},
+            "classes": {
+                "MorphShape": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "MorphShapeBuilder.js": {
+            "name": "MorphShapeBuilder.js",
+            "modules": {},
+            "classes": {
+                "MorphShapeBuilder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "MotionPath.js": {
+            "name": "MotionPath.js",
+            "modules": {},
+            "classes": {
+                "MotionPath": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "Path.js": {
+            "name": "Path.js",
+            "modules": {},
+            "classes": {
+                "Path": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "QBezier.js": {
+            "name": "QBezier.js",
+            "modules": {},
+            "classes": {
+                "QBezier": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "FreezedMotionPath": {
+            "name": "FreezedMotionPath",
+            "shortname": "FreezedMotionPath",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "FreezedMotionPath.js",
+            "line": 6,
+            "is_constructor": 1
+        },
+        "Freezer": {
+            "name": "Freezer",
+            "shortname": "Freezer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "Freezer.js",
+            "line": 7,
+            "is_constructor": 1
+        },
+        "MorphPath": {
+            "name": "MorphPath",
+            "shortname": "MorphPath",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "MorphPath.js",
+            "line": 7,
+            "extends": "Path",
+            "is_constructor": 1
+        },
+        "MorphShape": {
+            "name": "MorphShape",
+            "shortname": "MorphShape",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "MorphShape.js",
+            "line": 7,
+            "is_constructor": 1
+        },
+        "MorphShapeBuilder": {
+            "name": "MorphShapeBuilder",
+            "shortname": "MorphShapeBuilder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "MorphShapeBuilder.js",
+            "line": 7,
+            "is_constructor": 1
+        },
+        "MotionPath": {
+            "name": "MotionPath",
+            "shortname": "MotionPath",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "MotionPath.js",
+            "line": 6,
+            "extends": "Path",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "time",
+                    "description": "animation total time",
+                    "type": "Number"
+                },
+                {
+                    "name": "rotationStyle",
+                    "description": "[MotionPath.NONE | MotionPath.POI_FLASH | MotionPath.FORWARD]",
+                    "type": "Number"
+                }
+            ]
+        },
+        "Path": {
+            "name": "Path",
+            "shortname": "Path",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "Path.js",
+            "line": 7,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "start pos X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "start pos Y",
+                    "type": "Number"
+                }
+            ]
+        },
+        "QBezier": {
+            "name": "QBezier",
+            "shortname": "QBezier",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "QBezier.js",
+            "line": 6,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "p0",
+                    "description": "start anchor",
+                    "type": "Point"
+                },
+                {
+                    "name": "p1",
+                    "description": "control anchor",
+                    "type": "Point"
+                },
+                {
+                    "name": "p2",
+                    "description": "end anchor",
+                    "type": "Point"
+                }
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 1,
+            "description": "FreezedMotionPath",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 18,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "FreezedMotionPath.name",
+            "final": "",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 26,
+            "description": "array of the time table",
+            "itemtype": "property",
+            "name": "data",
+            "type": "{Array}",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 32,
+            "description": "the total animation time",
+            "itemtype": "property",
+            "name": "time",
+            "type": "{Number}",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 38,
+            "description": "the interval of the each time table",
+            "itemtype": "property",
+            "name": "sampling",
+            "type": "{Number}",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 44,
+            "description": "the flag of loop",
+            "itemtype": "property",
+            "name": "loop",
+            "type": "{Boolean}",
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "FreezedMotionPath.js",
+            "line": 52,
+            "description": "get a info at the specified time",
+            "itemtype": "method",
+            "name": "getAt",
+            "params": [
+                {
+                    "name": "time",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "the info of x,y and rotation",
+                "type": "Object"
+            },
+            "class": "FreezedMotionPath"
+        },
+        {
+            "file": "Freezer.js",
+            "line": 1,
+            "description": "Freezer\nfreeze the motion path or the morph shape.",
+            "class": "Freezer"
+        },
+        {
+            "file": "Freezer.js",
+            "line": 16,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "Freezer.name",
+            "final": "",
+            "class": "Freezer"
+        },
+        {
+            "file": "Freezer.js",
+            "line": 25,
+            "description": "freeze the motion path at specified time and intervals",
+            "itemtype": "method",
+            "name": "",
+            "params": [
+                {
+                    "name": "motionPath",
+                    "description": "the target MotionPath",
+                    "type": "MotionPath"
+                },
+                {
+                    "name": "time",
+                    "description": "the total time of animation",
+                    "type": "Number"
+                },
+                {
+                    "name": "sampling",
+                    "description": "the interval of sampling",
+                    "type": "Number"
+                },
+                {
+                    "name": "rounding",
+                    "description": "the flag of rounding x,y pos",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "FreezedMotionPath"
+            },
+            "class": "Freezer"
+        },
+        {
+            "file": "Freezer.js",
+            "line": 54,
+            "description": "freeze the MorphShape at specified time and intervals",
+            "itemtype": "method",
+            "name": "",
+            "params": [
+                {
+                    "name": "morphShape",
+                    "description": "the target MorphShape",
+                    "type": "MotionPath"
+                },
+                {
+                    "name": "time",
+                    "description": "the total time of animation",
+                    "type": "Number"
+                },
+                {
+                    "name": "sampling",
+                    "description": "the interval of sampling",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "BitmapAnimation"
+            },
+            "class": "Freezer"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 1,
+            "description": "MorphPath\nMorphPath must be a \"closed-path\"",
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 19,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MorphPath.name",
+            "final": "",
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 28,
+            "description": "calc interpolate pos",
+            "itemtype": "method",
+            "name": "",
+            "params": [
+                {
+                    "name": "p0",
+                    "description": "",
+                    "type": "Point"
+                },
+                {
+                    "name": "p1",
+                    "description": "",
+                    "type": "Point"
+                },
+                {
+                    "name": "t",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Point"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 55,
+            "description": "calc rectangle",
+            "itemtype": "method",
+            "name": "getRect",
+            "return": {
+                "description": "top.left,width,height (rectangle Object)",
+                "type": "Object"
+            },
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 102,
+            "description": "translate x,y pos to specified point.",
+            "itemtype": "method",
+            "name": "translate",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 115,
+            "description": "calc data",
+            "itemtype": "method",
+            "name": "calculate",
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 122,
+            "description": "split the path at specified time",
+            "params": [
+                {
+                    "name": "time",
+                    "description": "animation time",
+                    "type": "Number"
+                }
+            ],
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 145,
+            "description": "sort point data by the two specified point\nsearch the nearest anchor to the first point, and set the direction by next point.\nand sort data.",
+            "itemtype": "method",
+            "name": "sortByPoint",
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "first point x",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "first point y",
+                    "type": "Number"
+                },
+                {
+                    "name": "x1",
+                    "description": "next point x",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "next point y",
+                    "type": "Number"
+                }
+            ],
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 212,
+            "description": "set fill color",
+            "itemtype": "method",
+            "name": "beginFill",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "",
+                    "type": "Number|String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 221,
+            "description": "shortcut to \"beginFill\"",
+            "itemtype": "method",
+            "name": "f",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "",
+                    "type": "Number|String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphPath.js",
+            "line": 230,
+            "description": "read anchor-contlol-anchor data from the array",
+            "itemtype": "method",
+            "name": "read",
+            "params": [
+                {
+                    "name": "arr",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "class": "MorphPath"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 1,
+            "description": "MorphShape",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 26,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MorphShape.name",
+            "final": "",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 35,
+            "description": "point list",
+            "itemtype": "property",
+            "name": "data",
+            "type": "{Array}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 41,
+            "description": "flag of use tick",
+            "itemtype": "property",
+            "name": "useTicks",
+            "type": "{Boolean}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 47,
+            "description": "flag of loop",
+            "itemtype": "property",
+            "name": "loop",
+            "type": "{Boolean}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 53,
+            "description": "animation timeline",
+            "itemtype": "property",
+            "name": "timeline",
+            "type": "{Timeline}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 59,
+            "description": "red value",
+            "itemtype": "property",
+            "name": "r",
+            "type": "{Number}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 65,
+            "description": "green value",
+            "itemtype": "property",
+            "name": "g",
+            "type": "{Number}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 71,
+            "description": "blue value",
+            "itemtype": "property",
+            "name": "b",
+            "type": "{Number}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 77,
+            "description": "call back function after onTick\nsorry,now,MorphShape use the onTick function to draw path,\nso, if you add a tick-function, use \"onCompTick\".",
+            "itemtype": "property",
+            "name": "onCompTick",
+            "type": "{Function}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 85,
+            "description": "rectangle og the start shape",
+            "itemtype": "property",
+            "name": "startRect",
+            "type": "{Object}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 91,
+            "description": "rectangle og the end shape",
+            "itemtype": "property",
+            "name": "endRect",
+            "type": "{Object}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 97,
+            "description": "total animation time",
+            "itemtype": "property",
+            "name": "time",
+            "type": "{Number}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 104,
+            "description": "move the frame of animation and stop",
+            "itemtype": "method",
+            "name": "gotoAndStop",
+            "params": [
+                {
+                    "name": "o",
+                    "description": "label name | frame num",
+                    "type": "String|Number"
+                }
+            ],
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 112,
+            "description": "move the frame of animation and play",
+            "itemtype": "method",
+            "name": "gotoAndPlay",
+            "params": [
+                {
+                    "name": "o",
+                    "description": "label name | frame num",
+                    "type": "String | Number"
+                }
+            ],
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 120,
+            "description": "helper of create a Object used at tween",
+            "params": [
+                {
+                    "name": "n",
+                    "description": "",
+                    "type": "*"
+                },
+                {
+                    "name": "v",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 131,
+            "description": "draw path by onTick\nonTick",
+            "params": [
+                {
+                    "name": "e",
+                    "description": ""
+                }
+            ],
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShape.js",
+            "line": 151,
+            "description": "release tweens from timeline",
+            "itemtype": "method",
+            "name": "dispose",
+            "type": "{Function}",
+            "class": "MorphShape"
+        },
+        {
+            "file": "MorphShapeBuilder.js",
+            "line": 1,
+            "description": "MorphShapeBuilder",
+            "class": "MorphShapeBuilder"
+        },
+        {
+            "file": "MorphShapeBuilder.js",
+            "line": 16,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MorphShapeBuilder.name",
+            "final": "",
+            "class": "MorphShapeBuilder"
+        },
+        {
+            "file": "MorphShapeBuilder.js",
+            "line": 25,
+            "description": "build the MorphShape from the two MorphMath",
+            "itemtype": "method",
+            "name": "build",
+            "params": [
+                {
+                    "name": "mp0",
+                    "description": "start path",
+                    "type": "MorphPath"
+                },
+                {
+                    "name": "mp1",
+                    "description": "end path",
+                    "type": "MorphPath"
+                },
+                {
+                    "name": "time",
+                    "description": "total time of animation",
+                    "type": "Number"
+                },
+                {
+                    "name": "ease",
+                    "description": "ease function. Usually use Ease class functions",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "MorphShape"
+            },
+            "class": "MorphShapeBuilder"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 24,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MotionPath.name",
+            "final": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 31,
+            "description": "Constant defining the none rotation.",
+            "type": "{Number}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MotionPath.NONE",
+            "final": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 38,
+            "description": "Constant defining the Flash-like rotation. Note:\"Poi\" is a Japanese word meaning \"similar\" or \"like\"",
+            "type": "{Number}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MotionPath.POI_FLASH",
+            "final": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 45,
+            "description": "Constant defining the rotation in the direction of travel.",
+            "type": "{Number}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "MotionPath.FORWARD",
+            "final": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 54,
+            "description": "Constant defining the rotation in the direction of travel.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "the target object that will have its x,y(and rotation) properties tweened.",
+                    "type": "Object"
+                },
+                {
+                    "name": "time",
+                    "description": "animation total time",
+                    "type": "Number"
+                },
+                {
+                    "name": "rotationStyle",
+                    "description": "type of rotation",
+                    "type": "Number"
+                }
+            ],
+            "static": 1,
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 68,
+            "description": "the target object that will have its x,y(and rotation) properties tweened.",
+            "itemtype": "property",
+            "name": "_target",
+            "type": "{Object}",
+            "access": "private",
+            "tagname": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 75,
+            "description": "the list of functions for the calculation of the rotation",
+            "itemtype": "property",
+            "name": "_rFuncList",
+            "type": "{Array}",
+            "access": "private",
+            "tagname": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 83,
+            "description": "type of rotation",
+            "itemtype": "property",
+            "name": "rotationStyle",
+            "type": "{Number}",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 91,
+            "description": "get a rotation between two point by atan2",
+            "itemtype": "method",
+            "name": "_atan2",
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "x1",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 104,
+            "description": "get a rotation between two point by atan",
+            "itemtype": "method",
+            "name": "_atan",
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "x1",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 119,
+            "description": "get a info at the specified time",
+            "itemtype": "method",
+            "name": "getAt",
+            "params": [
+                {
+                    "name": "time",
+                    "description": "time",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "info of x,y, and rotation",
+                "type": "Object"
+            },
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 155,
+            "description": "set the target",
+            "itemtype": "method",
+            "name": "setTarget",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "the target object that will have its x,y(and rotation) properties tweened.",
+                    "type": "Object"
+                }
+            ],
+            "class": "MotionPath"
+        },
+        {
+            "file": "MotionPath.js",
+            "line": 163,
+            "description": "set the total time of animation",
+            "itemtype": "method",
+            "name": "setTime",
+            "params": [
+                {
+                    "name": "time",
+                    "description": "time",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "MotionPath"
+            },
+            "class": "MotionPath"
+        },
+        {
+            "file": "Path.js",
+            "line": 1,
+            "description": "Path\nmanage path data",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 25,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "Path.name",
+            "final": "",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 32,
+            "description": "interval between anchor and next anchor",
+            "itemtype": "property",
+            "name": "BLOCK_COUNT",
+            "type": "{Number}",
+            "static": 1,
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 41,
+            "description": "calculation flag",
+            "itemtype": "property",
+            "name": "_dirty",
+            "type": "{Boolean}",
+            "access": "private",
+            "tagname": "",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 50,
+            "description": "list of anchor point and control point",
+            "itemtype": "property",
+            "name": "pointList",
+            "type": "{Array}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 56,
+            "description": "data length",
+            "itemtype": "property",
+            "name": "length",
+            "type": "{Number}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 62,
+            "description": "animation total time",
+            "itemtype": "property",
+            "name": "time",
+            "type": "{Number}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 68,
+            "description": "list of Time and distance of each anchor",
+            "itemtype": "property",
+            "name": "_timeTable",
+            "type": "{Array}\n//@private todo change public",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 75,
+            "description": "animation total distance",
+            "itemtype": "property",
+            "name": "totalDist",
+            "type": "{Number}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 81,
+            "description": "Color that is used to draw",
+            "itemtype": "property",
+            "name": "color",
+            "type": "{Number}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 87,
+            "description": "the flag of loop",
+            "itemtype": "property",
+            "name": "loop",
+            "type": "{Boolean}",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 95,
+            "description": "add new control & anchor point",
+            "itemtype": "method",
+            "name": "push",
+            "params": [
+                {
+                    "name": "x1",
+                    "description": "control X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "control Y",
+                    "type": "Number"
+                },
+                {
+                    "name": "x2",
+                    "description": "anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y2",
+                    "description": "anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 113,
+            "description": "calculate time table",
+            "itemtype": "method",
+            "name": "_calc",
+            "access": "private",
+            "tagname": "",
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 130,
+            "description": "get a point info at the specified time",
+            "itemtype": "method",
+            "name": "getAt",
+            "params": [
+                {
+                    "name": "time",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 176,
+            "description": "draw path to Canvas/Shape",
+            "itemtype": "method",
+            "name": "drawPath",
+            "params": [
+                {
+                    "name": "canvas",
+                    "description": "",
+                    "type": "HTMLCanvasElement|Shape"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "HTMLCanvasElement|Shape"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 206,
+            "description": "add QBezier curve to path",
+            "itemtype": "method",
+            "name": "curveTo",
+            "params": [
+                {
+                    "name": "x1",
+                    "description": "control X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "control Y",
+                    "type": "Number"
+                },
+                {
+                    "name": "x2",
+                    "description": "anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y2",
+                    "description": "anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 218,
+            "description": "shortcut to \"curveTo\"",
+            "itemtype": "method",
+            "name": "qt",
+            "params": [
+                {
+                    "name": "x1",
+                    "description": "control X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y1",
+                    "description": "control Y",
+                    "type": "Number"
+                },
+                {
+                    "name": "x2",
+                    "description": "anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y2",
+                    "description": "anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 230,
+            "description": "add line(inside, QBezier) to path",
+            "itemtype": "method",
+            "name": "lineTo",
+            "params": [
+                {
+                    "name": "x2",
+                    "description": "anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y2",
+                    "description": "anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 243,
+            "description": "shortcut to \"lineTo\"",
+            "itemtype": "method",
+            "name": "lt",
+            "params": [
+                {
+                    "name": "x2",
+                    "description": "anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y2",
+                    "description": "anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 253,
+            "description": "move first anchor, when call this method, path data is discarded and recreated",
+            "itemtype": "method",
+            "name": "moveTo",
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "first anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "first anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 269,
+            "description": "shortcut to \"moveTo\"",
+            "itemtype": "method",
+            "name": "mt",
+            "params": [
+                {
+                    "name": "x0",
+                    "description": "first anchor X",
+                    "type": "Number"
+                },
+                {
+                    "name": "y0",
+                    "description": "first anchor Y",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 279,
+            "description": "set path color(like Graphics.beginStroke)",
+            "itemtype": "method",
+            "name": "beginStroke",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "",
+                    "type": "Number|String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 294,
+            "description": "shortcut to \"beginStroke\"",
+            "itemtype": "method",
+            "name": "p",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "",
+                    "type": "Number|String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "Path.js",
+            "line": 303,
+            "description": "get a QBezier at the specified index",
+            "itemtype": "method",
+            "name": "_getQBAt",
+            "params": [
+                {
+                    "name": "i",
+                    "description": "index",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "\n//@private todo move public",
+                "type": "QBezier"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 1,
+            "description": "QBezier\nQuadratic β spline curve",
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 20,
+            "description": "Class name",
+            "type": "{String}",
+            "static": 1,
+            "itemtype": "property",
+            "name": "QBezier.name",
+            "final": "",
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 29,
+            "description": "start anchor",
+            "itemtype": "property",
+            "name": "p0",
+            "type": "Point",
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 35,
+            "description": "control anchor",
+            "itemtype": "property",
+            "name": "p1",
+            "type": "Point",
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 41,
+            "description": "end anchor",
+            "itemtype": "property",
+            "name": "p2",
+            "type": "Point",
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 48,
+            "description": "calculate the distance between the 3-point.<br>\nOnly 3-points. hmm..",
+            "itemtype": "method",
+            "name": "getDistance",
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 60,
+            "description": "calculate a point at time",
+            "itemtype": "method",
+            "name": "getAt",
+            "params": [
+                {
+                    "name": "t",
+                    "description": "time, usually 0<=t<=1",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Point"
+            },
+            "class": "QBezier"
+        },
+        {
+            "file": "QBezier.js",
+            "line": 78,
+            "description": "helper method for calculate the distance between 2 point",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_distance",
+            "params": [
+                {
+                    "name": "p1",
+                    "description": "",
+                    "type": "Point"
+                },
+                {
+                    "name": "p2",
+                    "description": "",
+                    "type": "Point"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "QBezier"
+        }
+    ]
+}

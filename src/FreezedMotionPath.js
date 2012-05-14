@@ -17,9 +17,9 @@ var p = FreezedMotionPath.prototype;
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const FreezedMotionPath.name
      */
     FreezedMotionPath.name = "FreezedMotionPath";
 // properties:
@@ -51,7 +51,7 @@ var p = FreezedMotionPath.prototype;
 // public method:
     /**
      * get a info at the specified time
-     * @property getAt
+     * @method getAt
      * @param {Number} time
      * @return {Object} the info of x,y and rotation
      */

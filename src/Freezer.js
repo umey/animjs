@@ -15,15 +15,16 @@ var p = Freezer.prototype;
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const Freezer.name
      */
     Freezer.name = "Freezer";
 
 // public method:
     /**
      * freeze the motion path at specified time and intervals
+     * @method
      * @param {MotionPath} motionPath   the target MotionPath
      * @param {Number} time             the total time of animation
      * @param {Number} sampling         the interval of sampling
@@ -52,6 +53,7 @@ var p = Freezer.prototype;
     };
     /**
      * freeze the MorphShape at specified time and intervals
+     * @method
      * @param {MotionPath} morphShape   the target MorphShape
      * @param {Number} time             the total time of animation
      * @param {Number} sampling         the interval of sampling

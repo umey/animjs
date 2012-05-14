@@ -25,9 +25,9 @@ var p = MorphShape.prototype = new Shape();
 // static properties:
     /**
      * Class name
-     * @property name
      * @type {String}
      * @static
+     * @const  MorphShape.name
      */
     MorphShape.name = "MorphShape";
 
@@ -104,7 +104,7 @@ var p = MorphShape.prototype = new Shape();
     /**
      * move the frame of animation and stop
      * @method gotoAndStop
-     * @param o
+     * @param {String|Number} o label name | frame num
      */
     p.gotoAndStop = function(o){
         this.timeline.gotoAndStop(o);
@@ -112,7 +112,7 @@ var p = MorphShape.prototype = new Shape();
     /**
      * move the frame of animation and play
      * @method gotoAndPlay
-     * @param o
+     * @param {String | Number} o label name | frame num
      */
     p.gotoAndPlay = function(o){
         this.timeline.gotoAndPlay(o);
@@ -130,7 +130,7 @@ var p = MorphShape.prototype = new Shape();
     };
     /**
      * draw path by onTick
-     * @method onTick
+     * onTick
      * @param e
      */
     p.onTick = function(e){
