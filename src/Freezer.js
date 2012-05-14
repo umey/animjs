@@ -138,7 +138,7 @@ var p = Freezer.prototype;
         return new BitmapAnimation(
             new SpriteSheet({
                 images: [imgCanvas.toDataURL()],
-                frames: {width:width, height:height, numFrames:num+2}
+                frames: {width:width, height:height, count:num+1}
             })
         );
     };
